@@ -1,126 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Flexbox</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0px;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      h1 {
-        font-size: 2.5rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-      img {
-        /* object-fit: contain;
-        width: 100%; */
-        /* width: 100%;
-        height: auto; */
-        max-width: 100%;
-      }
-      /* Style the header */
-      .header {
-        background-color: #f1f1f1;
-        padding: 30px;
-        text-align: center;
-      }
-
-      /* Container for flexboxes */
-      .row {
-        flex-direction: row;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      /* Create three equal columns that sit next to each other */
-      .column {
-        flex: 1;
-        padding: 10px;
-        /* min-width: 25%; */
-        /* min-height: 200px; */
-      }
-      #col1 {
-        background-color: aqua;
-      }
-      #col2 {
-        background-color: brown;
-      }
-      #col3 {
-        background-color: cornflowerblue;
-      }
-      #col4 {
-        background-color: burlywood;
-      }
-      /* Style the footer */
-      .footer {
-        background-color: #f1f1f1;
-        padding: 10px;
-        text-align: center;
-      }
-      @media (max-width: 900px) {
-        .column {
-          min-width: 50%;
-        }
-      }
-      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-      @media (max-width: 500px) {
-        h1 {
-          font-size: 3.5rem;
-        }
-        p {
-          font-size: 1.5rem;
-        }
-        .row {
-          flex-direction: column;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Header</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simple responsive gallery LJ</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div id="header">
+    <h1> header</h1>
+  </div>
+  <div id="row">
+    <div id="col1" class="col">
+      <img src="images/plant1.jpg">
+      <p>When to plant. Plant daffodil bulbs in early autumn, ideally September, and potted bulbs in spring before they come into flower. You can also plant 'forced' bulbs indoors in September  such as the fragrant paper-white daffodil (Narcissus papyraceus) for flowering at Christmas or New Year. </p>
     </div>
-    <div class="row">
-      <div id="col1" class="column">
-        <img src="images/plant1.jpg" />
-        <p>section</p>
-      </div>
-      <div id="col2" class="column">
-        <img src="images/plant2.jpg" />
-        <p>section</p>
-      </div>
-      <div id="col3" class="column">
-        <img src="images/plant3.jpg" />
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking ae, cdel text, and a search
-          for 'lorem ipsum' will uncover many web sites still in their infancy.
-          Various versions have evolved over the years, sometimes by accident,
-          sometimes on purpose (injected humour and the like).
-        </p>
-      </div>
-      <div id="col4" class="column">
-        <img src="images/plant4.jpg" />
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking ae, cdel text, and a search
-          for 'lorem ipsum' will uncover many web sites still in their infancy.
-          Various versions have evolved over the years, sometimes by accident,
-          sometimes on purpose (injected humour and the like).
-        </p>
-      </div>
+    <div id="col2" class="col">
+      <img src="images/plant2.jpg">
+      <p>Foliage plants are plants considered to have decorative, colourful and interesting leaves. Such plants can create interesting garden spaces and can provide shade, colour and cover for a range of needs.</p>
     </div>
-    <div class="footer">
-      <p>Footer</p>
+    <div id="col3" class="col">
+      <img src="images/plant3.jpg">
+      <p>Purple flowered plants like foxgloves, teasel, globe thistle and alliums are excellent pollinator plants. For a striking pot or border display, try combining purple flowers with the acid greens of Alchemilla mollis, or euphorbias like Euphorbia amygdaloides var. robbiae.</p>
     </div>
-  </body>
+    <div id="col4" class="col">
+      <img src="images/plant4.jpg">
+      <p>Forget-me-not is valued for its attractive flowers. While the blooms are usually blue, other colors do exist. A bonus feature is that the buds preceding the blooms are pink, so you get two colors for the price of one. These plants are herbs historically used as an astringent to treat wounds and some medical conditions</p>
+    </div>
+  </div>
+  <div id="footer">
+    <p>footer text</p>
+  </div>
+</body>
 </html>
